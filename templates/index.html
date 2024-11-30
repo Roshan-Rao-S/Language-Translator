@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANGUAGE TRANSLATE BOT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="chat-container">
+        <div class="text-wrapper">LANGUAGE TRANSLATE BOT</div>
+
+        <div id="particles-js"></div>
+
+        <div id="chat-box"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type a message..." autofocus>
+            <button id="send-button">Send</button>
+            <button id="mic-button">🎤</button>
+        </div>
+    </div>
+    <div class="game-container"><canvas id="myBotCanvas"></canvas></div>
+
+    <!-- Include JavaScript files with url_for -->
+    <script src=""></script>
+    <script src="{{ url_for('static', filename='particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='bot.js') }}"></script>
+</body>
+</html>
