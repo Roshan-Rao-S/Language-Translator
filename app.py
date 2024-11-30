@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # CORS(app)
 
-genai.configure(api_key='AIzaSyBJ3zEb8ivbhhQ-Pt-YezVBtpZ1pIcngTM')
+genai.configure(api_key='GEMINI_API_KEY')
 
 # Initialize the model
 generation_config = {
